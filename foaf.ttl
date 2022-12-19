@@ -1,1 +1,33 @@
-test
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://pavelkitanov.github.io/wbs-foaf/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://pavelkitanov.github.io/wbs-foaf/foaf.ttl#me> ;
+  foaf:primaryTopic <https://pavelkitanov.github.io/wbs-foaf/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://pavelkitanov.github.io/wbs-foaf/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Pavel Kitanov" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Pavel" ;
+  foaf:family_name "Kitanov" ;
+  foaf:nick "paki" ;
+  foaf:mbox_sha1sum "65cca3318375036296e802bf36228e0757ca8a0e" ;
+  foaf:homepage <https://www.linkedin.com/in/pavel-kitanov-41875a241/> ;
+  foaf:phone <tel:089123123> ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Mario Petkovski" ;
+    foaf:mbox_sha1sum "d5755a9f670f5a6cf236be860d0c9c8e01e203ad" ;
+    rdfs:seeAlso <https://mariopetkovskii.github.io/rdf-foaf/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Bisera Stojmanovska " ;
+    foaf:mbox_sha1sum "59d780eae0f0b046e6fc86f1d6fc52c785f002dd" ;
+    rdfs:seeAlso <https://biseras.github.io/VebBaziraniSistemi/foaf.ttl>
+  ] .
